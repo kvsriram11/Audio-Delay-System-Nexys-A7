@@ -1,4 +1,4 @@
-# HDL - Hardware
+# HDL
 
 This folder contains all SystemVerilog hardware design files for the FPGA-Based Audio Delay System. The design targets the **Nexys A7 (Artix-7 XC7A100T)** board and is integrated into the **VeeRwolfX RISC-V SoC** via the Wishbone interconnect.
 
@@ -161,14 +161,14 @@ Instantiated once per `delay_line.sv` instance (i.e., twice total — one per st
 
 ```
 rvfpganexys (top)
-├── veerwolf_core           (RISC-V SoC)
-└── i2s2_top                (I2S2 Wishbone peripheral)
-    ├── i2s2                (I2S RX/TX protocol)
-    └── delay_line_top      (Stereo delay integration)
-        ├── delay_line [L]  (Left channel mono delay)
-        │   └── bram        (Left channel BRAM buffer)
-        └── delay_line [R]  (Right channel mono delay)
-            └── bram        (Right channel BRAM buffer)
+├── veerwolf_core                   (RISC-V SoC)
+└── i2s2_top     [Peripherals/]     (I2S2 Wishbone peripheral)
+    ├── i2s2     [Peripherals/]     (I2S RX/TX protocol)
+    └── delay_line_top [Peripherals/] (Stereo delay integration)
+        ├── delay_line [L] [Peripherals/] (Left channel mono delay)
+        │   └── bram   [Peripherals/]    (Left channel BRAM buffer)
+        └── delay_line [R] [Peripherals/] (Right channel mono delay)
+            └── bram   [Peripherals/]    (Right channel BRAM buffer)
 ```
 
 ---
