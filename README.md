@@ -50,7 +50,7 @@ where `N` is the programmable delay length in audio samples.
 Audio-Delay-System-Nexys-A7/
 │
 ├── HDL/                          # All hardware design files (SystemVerilog)
-│   ├── I2S2/                     # Custom audio processing modules
+│   ├── Peripherals/                     # Custom audio processing modules
 │   │   ├── bram.sv               # BRAM wrapper for circular buffer
 │   │   ├── delay_line.sv         # Mono delay line: circular buffer, feedback, dry/wet mix
 │   │   ├── delay_line_top.sv     # Stereo delay top: demux, dual mono instances, output mux
