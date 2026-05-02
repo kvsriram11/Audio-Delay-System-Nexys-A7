@@ -1,4 +1,4 @@
-# HDL
+# HDL - Hardware
 
 This folder contains all SystemVerilog hardware design files for the FPGA-Based Audio Delay System. The design targets the **Nexys A7 (Artix-7 XC7A100T)** board and is integrated into the **VeeRwolfX RISC-V SoC** via the Wishbone interconnect.
 
