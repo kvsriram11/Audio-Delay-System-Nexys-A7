@@ -10,7 +10,7 @@ This folder contains all SystemVerilog hardware design files for the FPGA-Based 
 HDL/
 ├── rvfpganexys.sv        # Top-level SoC wrapper
 ├── veerwolf_core.v       # VeeRwolfX RISC-V SoC core (unmodified)
-└── I2S2/
+└── Peripherals/
     ├── i2s2_top.sv       # I2S2 Wishbone peripheral top
     ├── i2s2.sv           # I2S receive/transmit logic
     ├── delay_line_top.sv # Stereo delay line top
